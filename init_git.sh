@@ -4,7 +4,7 @@ export PATH
 
 NAME=git
 GITDIR=/root/.ssh/$NAME/
-CONFIG=/root/.ssh/config
+CONFIG=/root/.ssh/configxx
 
 if [ ! -f $CONFIG ]; then
    for i in `ls $GITDIR|grep '.pub'`
@@ -28,7 +28,7 @@ if [ ! -f $CONFIG ]; then
 	    echo $ifile>>$CONFIG
 	    echo $nn>>$CONFIG
 	done
-    echo "${CONFIG} is created success!"   
+    echo "${CONFIG} is created success!"
 fi
 
 case "$1" in
